@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h3> Register here </h3>
+    <form>
+
+        <label for="first"> first name</label>
+        <input type="text" id="first" name="first" placeholder="first name">
+
+        <label for="last"> last name </label>
+        <input type="text" id="last" name="last" placeholder="last name">
+
+        <br>
+        <br>
+
+        <label for="gender"> Gender</label>
+        <input type="radio" id="male" name="gender" value="male"> male
+
+        <input type="radio" id="female" name="gender" value="female"> female
+        <br>
+        <br>
+        <label for="bdate"> Birthdate </label>
+        <input type="date" id="bdate" name="bdate">
+
+        <br>
+        <br>
+        <label for="email"> Email</label>
+        <input type="email" name="email" id="email">
+
+        <br>
+        <br>
+
+        <label for="password"> password</label>
+        <input type="password" name="password" id="password">
+
+        <br>
+        <br>
+        <label for="country"> Country</label>
+        <input list="countries">
+        <datalist id="countries">
+          <option value="Jordan"></option>
+          <option value="USA"></option>
+          <option value="UAE"></option>
+        </datalist>
+
+        <label for="country2"> select Country</label>
+        <select name="country" id="country">
+          <option value="select" disabled selected> select </option>
+          <option value="Jordan">Jordan </option>
+          <option value="USA"> USA </option>
+          <option value="UAE"> UAE</option>
+
+        </select>
+        <br>
+        <br>
+        <input type="checkbox" id="confirm" name="confirm" value="confirmed"> I accept the terms and conditions
+
+        <input type="submit">
+
+
+
+    </form>
+</body>
+
+</html>
