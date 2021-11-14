@@ -1,0 +1,23 @@
+ /* selector is the tag name*/
+ 
+ header {
+     text-align: center;
+ }
+ 
+ nav {
+     background-color: cadetblue;
+ }
+ 
+ li {
+     list-style-type: none;
+ }
+ /* Selector is the id */
+ 
+ #article1 {
+     color: blueviolet;
+ }
+ /* Selector is the class */
+ 
+ .article2 {
+     background-color: aquamarine;
+ }
