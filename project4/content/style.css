@@ -1,0 +1,21 @@
+body {
+    background-color: wheat;
+    background-image: url("bg.jfif");
+    /*background-size: contain;*/
+    /*background-repeat: no-repeat;*/
+}
+
+#div1 {
+    color: rgb(6, 2, 63);
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 1px red;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+}

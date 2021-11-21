@@ -1,0 +1,15 @@
+body {
+    background-color: wheat;
+    background-image: url("assets/bg.jfif");
+    background-size: cover;
+    background-repeat: ;
+}
+
+#div1 {
+    color: rgb(6, 2, 63);
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}

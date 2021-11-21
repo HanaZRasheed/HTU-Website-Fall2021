@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#div1 {
+    background-color: darkkhaki;
+    color: aliceblue;
+    /* border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    */
+    border: 10px solid red;
+    padding: 10px 10px;
+    height: 100px;
+    width: 100px;
+    box-sizing: content-box;
+    margin: 40px;
+    border-radius: 5px;
+}
+
+#div2 {
+    background-color: cadetblue;
+    border: 2px solid green;
+    height: 100px;
+    width: 100px;
+    padding: 20px 40px 10px;
+    margin: 20px;
+}
