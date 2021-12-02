@@ -1,0 +1,15 @@
+.item-1 {
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 100px;
+}
+
+.item-2 {
+    background-color: cadetblue;
+    height: 200px;
+    width: 200px;
+}
+
+.container {}
