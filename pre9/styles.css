@@ -1,0 +1,24 @@
+.container {
+    background-color: aquamarine;
+    height: 500px;
+    width: 500px;
+    margin: 20px auto;
+    border: 2px solid black;
+    position: relative;
+}
+
+.item-1,
+.item-2 {
+    width: 150px;
+    height: 150px;
+}
+
+.item-1 {
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+}
+
+.item-2 {
+    background-color: green;
+}

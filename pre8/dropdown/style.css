@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu {
+    background-color: darkturquoise;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: darkblue;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+i {
+    color: darkblue;
+    margin-right: 5px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: darkturquoise;
+    margin-top: 15px;
+    margin-left: -15px;
+    color: darkblue;
+}
+
+.menu ul li:hover .sub-menu-1 ul {
+    display: block;
+}
+
+.menu ul li:hover .sub-menu-1 ul li {
+    display: block;
+    margin: 10px;
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted darkblue;
+    background: transparent;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.nesting:hover .sub-menu-2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 170px;
+    background-color: darkturquoise;
+    color: darkblue;
+}

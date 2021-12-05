@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: pink;
+            border: 1px solid blue;
+            height: 100vh;
+        }
+        
+        .c {
+            background-color: burlywood;
+            border: 2px solid green;
+            padding: 20px;
+        }
+        
+        .a {
+            display: contents;
+            border: 1px solid red;
+            background-color: lightgrey;
+            padding: 10px;
+            width: 200px;
+        }
+        
+        .b {
+            display: inline;
+            border: 1px solid blue;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        
+        .E {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .e1 {
+            background-color: cadetblue;
+            border: 1px solid magenta;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The display Property</h1>
+
+    <h2>display: contents:</h2>
+    <div class="c"> C div******************
+        <div class="a">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+            <div class="b">HELLO WORLD!</div> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+    </div>
+
+    <div class="E">
+        <div class="e1"> E1</div>
+        <div class="e1"> E2</div>
+        <div class="e1"> E3</div>
+
+    </div>
+
+</body>
+
+</html>

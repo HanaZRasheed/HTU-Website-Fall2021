@@ -1,0 +1,20 @@
+#div1 {
+    display: inline;
+}
+
+#div2 {
+    display: inline-block;
+}
+
+h1 {
+    display: grid;
+}
+
+p {
+    display: contents;
+    color: red;
+}
+
+span {
+    display: block;
+}
