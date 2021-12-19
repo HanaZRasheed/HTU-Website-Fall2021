@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #041C32 url("../assets/wallpaper2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+p {
+    background-color: aliceblue;
+    opacity: 0.8;
+    margin: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    background-color: rgb(0 12 38);
+    position: sticky;
+    /* left: 0;
+    top: 0; */
+    width: 100%;
+    z-index: 1;
+    padding: 10px 30px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.logo {
+    color: #5efef8;
+    font-size: 1.5em;
+}
+
+.nav-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.nav-items {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-items ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-items ul li {
+    float: left;
+    margin: 0 0 0 5px;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.nav-items ul li a {
+    color: azure;
+    text-decoration: none;
+    padding: 5px 15px;
+    /* without display block the items will take their content width */
+    display: block;
+    line-height: 1.5;
+    transition: all 0.3s ease-out;
+}
+
+
+/* .logout {
+    position: relative;
+    right: -30px;
+    font-size: 14px;
+} */
+
+.nav-items ul li:hover>a {
+    color: #5efef8;
+}
+
+.nav-items ul ul {
+    position: absolute;
+    left: 0;
+    /* change it after adding the last sub-menu*/
+    /* top: 100%; */
+    top: calc(100%+15px);
+    white-space: nowrap;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-items ul ul li {
+    float: none;
+    margin: 0;
+    border-bottom: 1px dotted #fff;
+}
+
+
+/* This is added after the last sub menu */
+
+.nav-items>ul>li>ul:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    height: 16px;
+    width: 100%;
+}
+
+.nav-items ul ul li a {
+    background-color: rgb(0 12 38);
+}
+
+.nav-items ul li:hover>ul {
+    opacity: 1;
+    pointer-events: auto;
+    /*visible*/
+}
+
+.nav-items ul li:hover ul li:hover>a {
+    background-color: #1f008a;
+}
+
+.nav-items ul li .down {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: aliceblue;
+}
+
+.nav-items ul li:hover>.down {
+    color: #5efef8;
+}
+
+.nav-items ul ul ul {
+    /*Move the sub menu to the left */
+    left: 100%;
+    top: 0;
+}
+
+.nav-items ul ul li i {
+    transform: rotate(-90deg);
+    right: 3px;
+}
+
+.nav-items ul ul li:hover i {
+    color: #fff;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .nav-items ul li {
+        font-size: 16px;
+        margin: 0;
+    }
+    .nav-items ul li a {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .nav-icon {
+        display: none;
+    }
+    #nav-trigger {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .nav-icon {
+        display: block;
+        position: relative;
+        font-size: 36px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .nav-items {
+        position: fixed;
+        left: 0;
+        top: 72px;
+        padding: 0;
+        background: #041C32;
+        z-index: 100;
+        height: calc(100% - 74px);
+        overflow: auto;
+        width: calc(100% - 100px);
+        transition: all 0.3s ease-out;
+        transform: translateX(-150%);
+    }
+    .nav-items ul li {
+        float: none;
+        margin: 0 !important;
+        border-bottom: 1px dotted #fff;
+    }
+    .nav-items ul li a {
+        padding: 10px;
+    }
+    .nav-items>ul>li:hover>a {
+        background-color: #1f008a;
+        color: #fff;
+    }
+    .nav-items ul ul {
+        position: static;
+        pointer-events: auto;
+        opacity: 1;
+        /* after adding 
+        .nav-items ul ul li i {
+        transform: rotate(0deg);
+        right: 3px;
+         }*/
+        height: 0;
+        overflow: hidden;
+    }
+    .nav-items ul ul li a {
+        padding-left: 30px;
+    }
+    .nav-items ul ul ul li a {
+        padding-left: 60px;
+    }
+    .nav-items ul ul ul ul li a {
+        padding-left: 90px;
+    }
+    .nav-items ul ul li i {
+        transform: rotate(0deg);
+        right: 10px;
+    }
+    .nav-items ul li i {
+        right: 10px;
+    }
+    .nav-items ul li:hover>ul {
+        height: auto;
+    }
+    #nav-trigger {
+        opacity: 0;
+        position: fixed;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+    #nav-trigger:checked+.nav-items {
+        transform: translateX(0%);
+    }
+}
