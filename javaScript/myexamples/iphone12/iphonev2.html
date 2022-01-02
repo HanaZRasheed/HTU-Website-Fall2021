@@ -4,11 +4,12 @@
 <head>
     <script>
         function display() {
-            const radios = document.querySelectorAll('input[name="color"]');
+            var radios = document.querySelectorAll('input[name="color"]');
             let selectedValue;
-            for (const radio of radios) {
+            for (var radio of radios) {
                 if (radio.checked) {
                     selectedValue = radio.value;
+                    console.log(selectedValue);
                 }
             }
             if (selectedValue == "blue") {
@@ -23,7 +24,7 @@
             var x = document.querySelector("#blue-div").querySelectorAll('img');
             x.forEach(function(item) {
                 item.addEventListener('click', function() {
-                    document.querySelector('#bigimg1').src = imgsrc = item.src;
+                    document.querySelector('#bigimg1').src = item.src;
                 });
             });
         });
@@ -32,7 +33,7 @@
             var x = document.querySelector("#purple-div").querySelectorAll('img');
             x.forEach(function(item) {
                 item.addEventListener('click', function() {
-                    document.querySelector('#bigimg2').src = imgsrc = item.src;
+                    document.querySelector('#bigimg2').src = item.src;
                 });
             });
         });
