@@ -2,7 +2,7 @@ body {
     background-color: wheat;
     background-image: url("assets/bg.jfif");
     background-size: cover;
-    background-repeat: ;
+    background-repeat: no-repeat;
 }
 
 #div1 {
