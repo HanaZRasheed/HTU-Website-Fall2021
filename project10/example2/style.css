@@ -11,7 +11,7 @@
     grid-template-columns: repeat(4, 1fr);
     */
     text-align: center;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(150px, auto);
     grid-template-areas: 'header header header header' 'aside aside main main' 'nav nav main main' 'section section section section' 'section section section section' 'footer footer footer footer';
 }
 
